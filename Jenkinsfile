@@ -8,14 +8,14 @@ pipeline {
                 git url: 'https://github.com/AmalJohnson44/CICDemo.git', branch: 'main'
             }
         }
-/*
+
         stage('Install Dependencies') {
             steps {
                 // Installing dependencies
                 sh 'npm install'
             }
         }
-*/
+
 
         stage('Run Tests') {
             steps {
