@@ -13,7 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Cloning the repository
-                git url: 'https://github.com/AnkitMU/OCL.git', branch: 'main'
+                git url: 'https://github.com/AmalJohnson44/CICDemo.git', branch: 'main'
             }
         }
 
