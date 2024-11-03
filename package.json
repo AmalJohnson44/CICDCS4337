@@ -8,8 +8,8 @@
     "build": "echo 'Building project...' && exit 0",
     "test": "echo 'Running tests...' && exit 0",
     "deploy": "echo 'Deploying project...' && exit 0"
-  },
-  "author": "Ankit Jha",
+    "sonar": "sonar-scanner -Dsonar.projectKey=SonarQube -Dsonar.sources=./src -Dsonar.host.url=http://localhost:9000-Dsonar.login=squ_784d155517f1e514904838c431f5091dc54b9a9e",
+  "author": "Amal Johnson",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2"
