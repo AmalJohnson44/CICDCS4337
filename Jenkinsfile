@@ -20,21 +20,21 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 // Installing dependencies
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Run Tests') {
             steps {
                 // Running tests
-                sh 'npm test'
+                bat 'npm test'
             }
         }
 
         stage('Build') {
             steps {
                 // Building the project
-                sh 'npm run build'
+                bat'npm run build'
             }
         }
 
@@ -42,7 +42,7 @@ pipeline {
             steps {
                 // Running SonarQube analysis
                 withSonarQubeEnv('SonarQube') { // Use the SonarQube server name configured in Jenkins
-                    sh 'npm run sonar'
+                    bat'npm run sonar'
                 }
             }
         }
