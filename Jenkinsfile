@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Cloning the repository
-                git url: 'https://github.com/AmalJohnson44/CICDemo.git', branch: 'main'
+                git url: 'https://github.com/AmalJohnson44/CICDCS4337.git', branch: 'main'
             }
         }
 
